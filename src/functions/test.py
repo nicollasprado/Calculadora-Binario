@@ -12,3 +12,5 @@ if (checkIfIsBinarie(binarieNumberSplitted) == True):
     print(convertBinarieToReal(reversedBinarieNumber))
                 
     print(convertBinarieToIntComplementTwo(binarieNumber))
+
+    $
