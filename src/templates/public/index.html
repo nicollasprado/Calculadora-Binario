@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<form action="/" method="POST">
+    <label for="binarieNumber">Número binário:</label>
+    <input type="text" name="binarieNumber">
+    <button type="submit">Transformar</button>
+    <p>Resultado: </p>
+</form>
+
+{% endblock %}
