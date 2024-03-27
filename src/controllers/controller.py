@@ -8,6 +8,6 @@ class IndexController(MethodView):
         return render_template('public/index.html')
     
     def post(self):
-        binarieNumber = request.form['binarieNumber']
-        binarieConversion = index.binarieConversions(binarieNumber)
-        return binarieConversion
+        binaryNumber = request.form['binaryNumber']
+        binaryConversion = index.binaryConversions(binaryNumber)
+        return binaryConversion

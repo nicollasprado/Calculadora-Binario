@@ -1,12 +1,12 @@
-from src.functions.binarieToReal import *
-from src.functions.checkIfIsBinarie import *
-from src.functions.binarieToIntComplementTwo import *
+from src.functions.binaryToReal import *
+from src.functions.checkIfIsBinary import *
+from src.functions.binaryToIntComplementTwo import *
 
 
-def binarieConversions(binarieNumber: str):
-        binarieNumberSplitted = list(binarieNumber)
-        reversedBinarieNumber = binarieNumber[::-1]
+def binaryConversions(binaryNumber: str):
+        binaryNumberSplitted = list(binaryNumber)
+        reversedBinaryNumber = binaryNumber[::-1]
 
-        if (checkIfIsBinarie(binarieNumberSplitted) == True):
+        if (checkIfIsBinary(binaryNumberSplitted) == True):
 
-                return convertBinarieToReal(reversedBinarieNumber)
+                return convertBinaryToReal(reversedBinaryNumber)
