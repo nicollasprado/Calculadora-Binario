@@ -13,4 +13,4 @@ if (checkIfIsBinarie(binarieNumberSplitted) == True):
                 
     print(convertBinarieToIntComplementTwo(binarieNumber))
 
-    $
+    #
