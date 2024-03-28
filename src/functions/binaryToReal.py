@@ -6,6 +6,6 @@ def convertBinaryToReal(binaryReversed: str):
             equivalentRealNumber = int(digit) * (2 ** expoent)
             realNumberSum += equivalentRealNumber
             expoent += 1
-        return str(realNumberSum)
+        return realNumberSum
     except:
         raise Exception("Um Erro Aconteceu, por favor contate os criadores")   
