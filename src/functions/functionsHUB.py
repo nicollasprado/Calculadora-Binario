@@ -10,14 +10,22 @@ def binaryConversions(binaryNumber: str, optionChosen: int):
         reversedBinaryNumber = binaryNumber[::-1]
 
         if (checkIfIsBinary(binaryNumberSplitted) == True):
-                match optionChosen:
-                        case 1: return str(convertBinaryToDecimal(reversedBinaryNumber))
-                        case 2: return convertBinaryToSignMagnitude(binaryNumber)
-                        case 3: return convertBinaryToIntComplementTwo(binaryNumber)                        
+                # match optionChosen:
+                #         case 1: return str(convertBinaryToDecimal(reversedBinaryNumber))
+                #         case 2: return convertBinaryToSignMagnitude(binaryNumber)
+                #         case 3: return convertBinaryToIntComplementTwo(binaryNumber)
+                if (optionChosen == 1):
+                        return str(convertBinaryToDecimal(reversedBinaryNumber))
+                elif (optionChosen == 2):
+                        return convertBinaryToSignMagnitude(binaryNumber)   
+                elif (optionChosen == 3):
+                        return convertBinaryToIntComplementTwo(binaryNumber)                   
         else:
                 return (f'O valor {binaryNumber} não é binário!')
         
 
 def decimalConversions(decimalNumber: int, optionChosen: int):
-        match optionChosen:
-                case 1: return convertDecimalToBinary(decimalNumber)
+        # match optionChosen:
+        #         case 1: return convertDecimalToBinary(decimalNumber)
+        if (optionChosen == 1):
+                return convertDecimalToBinary(decimalNumber)
