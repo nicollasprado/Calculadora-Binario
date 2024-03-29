@@ -1,8 +1,8 @@
 from src.app import app
 
 
-HOST = 'localhost'
-PORT = 4000
+HOST = "0.0.0.0"
+PORT = 5000
 DEBUG = True
 
 if (__name__ == '__main__'):
