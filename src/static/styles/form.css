@@ -1,0 +1,64 @@
+#transformForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25vw;
+    height: 40vh;
+    width: 50vw;
+    gap: 1em;
+}
+
+.inputNumber{
+    text-align: center;
+    background-color: var(--color-dark2);
+    outline: none;
+    border: solid var(--color-dark4);
+    border-radius: 15px;
+    color: var(--color-purple);
+    padding: 15px;
+    font-size: var(--fontsize-input);
+}
+
+#submitButton {
+    width: fit-content;
+    color: black;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 10px;
+    font-size: var(--fontsize-button);
+    transition: 0.5s;
+}
+
+#submitButton:hover{
+    color: var(--color-purple);
+    cursor: pointer;
+}
+
+
+
+
+.convertedNumber{
+    color: var(--color-purple);
+    font-size: var(--fontsize-convertedNum);
+    margin-top: 10px;
+}
+
+#result {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.inputValue{
+    color: var(--color-lightpurple);
+    font-size: var(--fontsize-inputNum);
+    margin-top: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

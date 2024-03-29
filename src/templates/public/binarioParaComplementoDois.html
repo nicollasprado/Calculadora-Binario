@@ -2,17 +2,17 @@
 
 {% block content %}
 
-<h1>BINÁRIO PARA DECIMAL</h1>
+<h1>BINÁRIO PARA INTEIRO COMPLEMENTO DE DOIS</h1>
 
-<form action="/" method="POST" id="transformForm">
+<form action="/binarioParaComplementoDois" method="POST" id="transformForm">
     <input type="number" name="binaryNumber" placeholder="0101" class="inputNumber">
     <button type="submit" id="submitButton">TRANSFORMAR</button>
 </form>
 
     {% set result = get_flashed_messages() %}
     {% if result %}
-    <div class="result">
-        <h2 class="result_title">Valor em Decimal:</h2>
+    <div id="result">
+        <h2 class="result_title">Valor em Inteiro Complemento De Dois:</h2>
         <p class="convertedNumber">{{result[0]}}</p>
         <div id="inputValueDiv">
             <h3>Em Binário:</h3>

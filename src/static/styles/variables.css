@@ -1,0 +1,17 @@
+:root{
+    --color-white: #fff;
+    --color-dark1: rgb(39, 39, 39);
+    --color-dark2: #2d2d2d;
+    --color-dark3: #414141;
+    --color-dark4: #1c1c1c;
+    --color-dark5: #343434;
+    --color-purple: #b040ff;
+    --color-lightpurple: #d08eff;
+    --fontsize-nav: 1.5em;
+    --fontsize-input: 2em;
+    --fontsize-button: 1.5em;
+    --fontsize-convertedNum: 4em;
+    --fontsize-inputNum: 1.5em;
+    --marginTop-content: 5em;
+    --height-header: 5em;
+}

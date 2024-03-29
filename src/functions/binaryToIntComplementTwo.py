@@ -1,4 +1,4 @@
-from functions.binaryToReal import convertBinaryToReal
+from src.functions.binaryToDecimal import convertBinaryToDecimal
 
 
 def getComplementOne(binaryNumber: str):
@@ -8,13 +8,13 @@ def getComplementOne(binaryNumber: str):
     return complementOne
 
 def sumOneInComplementOne(complementOne: str):
-    intValueOfComplementOne = convertBinaryToReal(complementOne[::-1])
+    intValueOfComplementOne = convertBinaryToDecimal(complementOne[::-1])
     complementTwo = (intValueOfComplementOne + 1) * -1
     return complementTwo
 
 def convertBinaryToIntComplementTwo(binaryNumber: str):
     if (binaryNumber.startswith("0")):
-        return (convertBinaryToReal(binaryNumber[::-1]))
+        return (convertBinaryToDecimal(binaryNumber[::-1]))
     else:
         complementOne = getComplementOne(binaryNumber)
         return sumOneInComplementOne(complementOne)

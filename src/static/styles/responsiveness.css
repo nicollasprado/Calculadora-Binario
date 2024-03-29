@@ -1,0 +1,32 @@
+@media screen and (max-width: 768px){
+    :root{
+        --fontsize-nav: 0.5em;
+        --fontsize-input: 0.7em;
+        --fontsize-button: 0.3em;
+        --fontsize-convertedNum: 2em;
+        --fontsize-inputNum: 0.5em;
+        --marginTop-content: 2.5em;
+        --height-header: 2.5em;
+    }
+
+    h1{
+        font-size: 0.8em;
+        margin-bottom: 2em;
+    }
+
+    h2{
+        font-size: 0.6em;
+    }
+
+    h3{
+        font-size: 0.3em;
+    }
+
+    .githubICON{
+        transform: scale(0.5);
+    }
+
+    .result_title{
+        margin-top: 2em;
+    }
+}

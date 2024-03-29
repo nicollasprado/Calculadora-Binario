@@ -1,1 +1,1 @@
-__all__ = ["binarieToIntComplementTwo", "binarieToReal", "ChckeIfIsBinarie"]
+__all__ = ["functionsHUB", "binarieToIntComplementTwo", "binarieToDecimal", "ChckeIfIsBinarie", "binaryToSM"]
