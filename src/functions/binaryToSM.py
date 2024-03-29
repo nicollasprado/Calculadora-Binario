@@ -1,4 +1,4 @@
-from functions.binaryToReal import *
+from src.functions.binaryToDecimal import *
 
 def convertBinaryToSignMagnitude(binaryNumber: str):
     sign = ""
@@ -8,5 +8,5 @@ def convertBinaryToSignMagnitude(binaryNumber: str):
         sign = "+"
 
     binaryNumberWithoutFirstDigit = binaryNumber.replace(binaryNumber[0], "", 1)
-    binaryNumberSM = convertBinaryToReal(binaryNumberWithoutFirstDigit[::-1])
+    binaryNumberSM = convertBinaryToDecimal(binaryNumberWithoutFirstDigit[::-1])
     return (f"{sign}{binaryNumberSM}")
