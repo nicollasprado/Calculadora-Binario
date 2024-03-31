@@ -14,6 +14,8 @@ class IndexController(MethodView):
         flash(binaryNumber)
         return redirect('/')
     
+
+
 class BinaryToSmController(MethodView):
     def get(self):
         return render_template('public/binarioParaSM.html')
@@ -24,6 +26,8 @@ class BinaryToSmController(MethodView):
         flash(binaryNumber)
         return redirect('/binarioParaSM')
     
+
+
 class BinaryToCTwoController(MethodView):
     def get(self):
         return render_template('public/binarioParaComplementoDois.html')
@@ -34,6 +38,8 @@ class BinaryToCTwoController(MethodView):
         flash(binaryNumber)
         return redirect('/binarioParaComplementoDois')
     
+
+
 class DecimalToBinaryController(MethodView):
     def get(self):
         return render_template('public/decimalParaBinario.html')
@@ -43,3 +49,17 @@ class DecimalToBinaryController(MethodView):
         flash(functionsHUB.decimalConversions(int(decimalNumber), 1))
         flash(decimalNumber)
         return redirect('/decimalParaBinario')
+    
+
+
+class DecimalToBinaryCTwoController(MethodView):
+    def get(self):
+        return render_template('public/decimalParaBinarioComplementoDois.html')
+    
+    def post(self):
+        decimalNumber = request.form['decimalNumber']
+        bitsQuantity = request.form['bitsQuantity']
+        flash(functionsHUB.decimalToBinComplementTwo(decimalNumber, int(bitsQuantity)))
+        flash(decimalNumber)
+        flash(bitsQuantity)
+        return redirect('/decimalParaBinarioComplementoDois')

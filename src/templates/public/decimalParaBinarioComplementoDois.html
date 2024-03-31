@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>DECIMAL PARA BINÁRIO COMPLEMENTO DE DOIS</h1>
+
+<form action="/decimalParaBinarioComplementoDois" method="POST" id="transformForm">
+    <div class="inputs">
+        <input type="number" name="bitsQuantity" placeholder="QTD Bits" id="inputBitsQuantity">
+        </label>
+        <input type="number" name="decimalNumber" placeholder="123" class="inputNumber">
+    </div>
+    <button type="submit" id="submitButton">TRANSFORMAR</button>
+</form>
+
+    {% set result = get_flashed_messages() %}
+    {% if result %}
+    <div id="result">
+        <h2 class="result_title">Valor em Binário Complemento De Dois:</h2>
+        <p class="convertedNumber">{{result[0]}}</p>
+        <div id="inputValueDivDecToBinCTwo">
+            <div>
+                <h3>Em Decimal:</h3>
+                <p class="inputValue">{{result[1]}}</p>
+            </div>
+            <div>
+                <h3>Quantidade de Bits:</h3>
+                <p class="inputValue">{{result[2]}}</p>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+{% endblock %}

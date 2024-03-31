@@ -1,4 +1,4 @@
-from src.functions.binaryToDecimal import *
+from functionstests.binaryToDecimal import *
 
 def convertBinaryToSignMagnitude(binaryNumber: str):
     sign = ""

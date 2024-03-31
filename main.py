@@ -1,7 +1,7 @@
 from src.app import app
 
 
-HOST = "0.0.0.0"
+HOST = "localhost"
 PORT = 5000
 DEBUG = True
 

@@ -1,6 +1,6 @@
-from src.functions.binaryToDecimal import *
-from src.functions.getComplementOne import *
-from src.functions.sumOneInComplementOne import *
+from functionstests.binaryToDecimal import *
+from functionstests.getComplementOne import *
+from functionstests.sumOneInComplementOne import *
 
 
 def convertBinaryToIntComplementTwo(binaryNumber: str):
