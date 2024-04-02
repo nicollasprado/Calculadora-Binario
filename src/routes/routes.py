@@ -7,4 +7,5 @@ routes = {
     "binarioCTWO_route": "/binarioParaComplementoDois", "binarioCTWO_route_controller": BinaryToCTwoController.as_view("binarioParaComplementoDois"),
     "decimalBinary_route": "/decimalParaBinario", "decimalBinary_route_controller": DecimalToBinaryController.as_view("decimalParaBinario"),
     "decimalBinaryCTWO_route": "/decimalParaBinarioComplementoDois", "decimalBinaryCTWO_route_controller": DecimalToBinaryCTwoController.as_view("decimalParaBinarioComplementoDois"),
+    "decimalBinarySM_route": "/decimalParaBinarioSinalMagnitude", "decimalBinarySM_route_controller": DecimalToBinarySmController.as_view("decimalParaBinarioSinalMagnitude"),
 }

@@ -4,6 +4,7 @@ from functionstests.binaryToIntComplementTwo import *
 from functionstests.binaryToSM import *
 from functionstests.decimalToBinary import *
 from functionstests.decimalToBinComplementTwo import *
+from functionstests.decimalToBinSM import *
 
 
 binaryNumber = input()
@@ -21,11 +22,6 @@ if (checkIfIsBinary(binaryNumberSplitted) == True):
 decimalNumber = input()
 bitsQuantity = int(input())
 
-
-if(decimalNumber.startswith("-")):
-    decimalNumberAbsolute = int(decimalNumber) * -1
-else:
-    decimalNumberAbsolute = int(decimalNumber)
-print(convertDecimalToBinary(decimalNumberAbsolute))
-
+print("D -> BIN", convertDecimalToBinary(decimalNumber, bitsQuantity))
 print("D -> C'2", convertDecimalToBinComplementTwo(decimalNumber, bitsQuantity))
+print("D -> S-M", convertDecimalToBinSM(decimalNumber, bitsQuantity))

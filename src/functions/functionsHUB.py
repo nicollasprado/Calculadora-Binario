@@ -1,9 +1,10 @@
 from src.functions.binaryToDecimal import *
 from src.functions.checkIfIsBinary import *
-from src.functions.binaryToIntComplementTwo import convertBinaryToIntComplementTwo
+from src.functions.binaryToIntComplementTwo import *
 from src.functions.binaryToSM import *
 from src.functions.decimalToBinary import *
-from src.functions.decimalToBinComplementTwo import convertDecimalToBinComplementTwo
+from src.functions.decimalToBinComplementTwo import *
+from src.functions.decimalToBinSM import *
 
 
 def binaryConversions(binaryNumber: str, optionChosen: int):
@@ -24,11 +25,12 @@ def binaryConversions(binaryNumber: str, optionChosen: int):
                 return (f'O valor {binaryNumber} não é binário!')
         
 
-def decimalConversions(decimalNumber: int, optionChosen: int):
+def decimalConversions(decimalNumber: str, optionChosen: int, bitsQuantity: int):
         # match optionChosen:
         #         case 1: return convertDecimalToBinary(decimalNumber)
         if (optionChosen == 1):
-                return convertDecimalToBinary(decimalNumber)
-        
-def decimalToBinComplementTwo(decimalNumber: str, bitsQuantity: int):
-        return convertDecimalToBinComplementTwo(decimalNumber, bitsQuantity)
+                return convertDecimalToBinary(decimalNumber, bitsQuantity)
+        elif (optionChosen == 2):
+                return convertDecimalToBinComplementTwo(decimalNumber, bitsQuantity)
+        elif (optionChosen == 3):
+                return convertDecimalToBinSM(decimalNumber, bitsQuantity)

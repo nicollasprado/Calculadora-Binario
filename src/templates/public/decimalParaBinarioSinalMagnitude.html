@@ -2,9 +2,9 @@
 
 {% block content %}
 
-<h1>DECIMAL PARA BINÁRIO COMPLEMENTO DE DOIS</h1>
+<h1>DECIMAL PARA BINÁRIO SINAL-MAGNITUDE</h1>
 
-<form action="/decimalParaBinarioComplementoDois" method="POST" id="transformForm">
+<form action="/decimalParaBinarioSinalMagnitude" method="POST" id="transformForm">
     <div class="inputs">
         <input type="number" name="bitsQuantity" placeholder="QTD Bits" id="inputBitsQuantity">
         </label>
@@ -16,7 +16,7 @@
     {% set result = get_flashed_messages() %}
     {% if result %}
     <div id="result">
-        <h2 class="result_title">Valor em Binário Complemento De Dois:</h2>
+        <h2 class="result_title">Valor em Binário Sinal-Magnitude:</h2>
         <p class="convertedNumber">{{result[0]}}</p>
         <div id="inputDecValuesDiv">
             <div>

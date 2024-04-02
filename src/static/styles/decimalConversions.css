@@ -11,7 +11,7 @@
     margin-right: 170px;
 }
 
-#inputValueDivDecToBinCTwo{
+#inputDecValuesDiv{
     display: flex;
     flex-direction: row;
     align-items: center;

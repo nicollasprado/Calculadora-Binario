@@ -46,8 +46,10 @@ class DecimalToBinaryController(MethodView):
     
     def post(self):
         decimalNumber = request.form['decimalNumber']
-        flash(functionsHUB.decimalConversions(int(decimalNumber), 1))
+        bitsQuantity = request.form['bitsQuantity']
+        flash(functionsHUB.decimalConversions(decimalNumber, 1, int(bitsQuantity)))
         flash(decimalNumber)
+        flash(bitsQuantity)
         return redirect('/decimalParaBinario')
     
 
@@ -59,7 +61,21 @@ class DecimalToBinaryCTwoController(MethodView):
     def post(self):
         decimalNumber = request.form['decimalNumber']
         bitsQuantity = request.form['bitsQuantity']
-        flash(functionsHUB.decimalToBinComplementTwo(decimalNumber, int(bitsQuantity)))
+        flash(functionsHUB.decimalConversions(decimalNumber, 2, int(bitsQuantity)))
         flash(decimalNumber)
         flash(bitsQuantity)
         return redirect('/decimalParaBinarioComplementoDois')
+    
+
+
+class DecimalToBinarySmController(MethodView):
+    def get(self):
+        return render_template('public/decimalParaBinarioSinalMagnitude.html')
+    
+    def post(self):
+        decimalNumber = request.form['decimalNumber']
+        bitsQuantity = request.form['bitsQuantity']
+        flash(functionsHUB.decimalConversions(decimalNumber, 3, int(bitsQuantity)))
+        flash(decimalNumber)
+        flash(bitsQuantity)
+        return redirect('/decimalParaBinarioSinalMagnitude')
