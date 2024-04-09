@@ -11,3 +11,4 @@ app.add_url_rule(routes["binarioCTWO_route"], view_func= routes["binarioCTWO_rou
 app.add_url_rule(routes["decimalBinary_route"], view_func= routes["decimalBinary_route_controller"])
 app.add_url_rule(routes["decimalBinaryCTWO_route"], view_func= routes["decimalBinaryCTWO_route_controller"])
 app.add_url_rule(routes["decimalBinarySM_route"], view_func= routes["decimalBinarySM_route_controller"])
+app.add_url_rule(routes["binaryFixedPointFractionalDecimal_route"], view_func= routes["binaryFixedPointFractionalDecimal_route_controller"])
