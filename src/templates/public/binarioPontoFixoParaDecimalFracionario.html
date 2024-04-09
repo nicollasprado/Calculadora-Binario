@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>BINÁRIO PONTO FIXO PARA DECIMAL FRACIONÁRIO</h1>
+
+<form action="/binarioPontoFixoParaDecimalFracionario" method="POST" id="transformForm">
+    <input type="text" name="binaryNumber" placeholder="1110.100" class="inputNumber">
+    <button type="submit" id="submitButton">TRANSFORMAR</button>
+</form>
+
+    {% set result = get_flashed_messages() %}
+    {% if result %}
+    <div id="result">
+        <h2 class="result_title">Valor em Decimal Fracionário:</h2>
+        <p class="convertedNumber">{{result[0]}}</p>
+        <div id="inputDecValuesDiv">
+            <div>
+                <h3>Em Binário Ponto Fixo:</h3>
+                <p class="inputValue">{{result[1]}}</p>
+            </div>
+            <div>
+                <h3>Formato:</h3>
+                <p class="inputValueFormat">{{result[2]}}</p>
+            </div>
+        </div>
+
+    </div>
+    {% endif %}
+
+{% endblock %}

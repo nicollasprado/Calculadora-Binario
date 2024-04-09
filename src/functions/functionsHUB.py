@@ -1,7 +1,8 @@
-from src.functions.binaryToDecimal import *
 from src.functions.checkIfIsBinary import *
+from src.functions.binaryToDecimal import *
 from src.functions.binaryToIntComplementTwo import *
 from src.functions.binaryToSM import *
+from src.functions.binaryFixedPointFractionalDecimal import *
 from src.functions.decimalToBinary import *
 from src.functions.decimalToBinComplementTwo import *
 from src.functions.decimalToBinSM import *
@@ -20,7 +21,9 @@ def binaryConversions(binaryNumber: str, optionChosen: int):
                 elif (optionChosen == 2):
                         return convertBinaryToSignMagnitude(binaryNumber)   
                 elif (optionChosen == 3):
-                        return convertBinaryToIntComplementTwo(binaryNumber)                   
+                        return convertBinaryToIntComplementTwo(binaryNumber)     
+                elif (optionChosen == 4):
+                        return convertBinaryFixedPointToFractionalDecimal(binaryNumber)              
         else:
                 return (f'O valor {binaryNumber} não é binário!')
         

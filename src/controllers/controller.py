@@ -40,6 +40,21 @@ class BinaryToCTwoController(MethodView):
     
 
 
+class BinaryFixedPointToFracinalDecimalController(MethodView):
+    def get(self):
+        return render_template('public/binarioPontoFixoParaDecimalFracionario.html')
+    
+    def post(self):
+        binaryNumber = request.form['binaryNumber']
+        fractionalDecimal, model = functionsHUB.binaryConversions(binaryNumber, 4)
+        binaryNumberWhitoutDot = binaryNumber[:].replace(".", "")
+        flash(fractionalDecimal)
+        flash(binaryNumberWhitoutDot)
+        flash(model)
+        return redirect('/binarioPontoFixoParaDecimalFracionario')
+    
+
+
 class DecimalToBinaryController(MethodView):
     def get(self):
         return render_template('public/decimalParaBinario.html')
